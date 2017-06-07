@@ -1,0 +1,274 @@
+.container {
+  width: 1250px;
+  margin: 0 auto;
+}
+.container:before, .container:after {
+  content: " ";
+  display: table
+}
+
+.container:after {
+  clear: both
+}
+.group:before,.group:after {
+  content: " ";
+  display: table
+}
+.group:after {
+  clear: both
+}
+.header {
+  width: 100%;
+  height: 46px;
+  background: #333;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+div.logo {
+  float: left;
+  position: relative;
+}
+div.logo a {
+  display: inline-block;
+  width: 100px;
+  height: 38px;
+  margin-top: 4px;
+  background: url(../images/nuandao.png) no-repeat -50px -280px;
+  position: relative;
+  z-index: 100;
+}
+/**logo后的背景**/
+div.logo-background {
+  width:120px;
+  height: 36px;
+  background: url("../images/2016newyear.png") no-repeat;
+  position: absolute;
+  top: 0;
+  left: -45px;
+}
+/**footer**/
+.footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: #fff;
+}
+div.footer-b {
+  font-size: 12px;
+  color: #303030;
+  height: 42px;
+  padding: 10px 0 20px;
+}
+div.footer-b p{
+  padding: 5px 0;
+  margin: 0;
+}
+div.footer-b a{
+  color: #303030;
+}
+div.footer-b-left span {
+  padding: 0 15px;
+}
+div.footer-b-left {
+  float: left;
+}
+div.footer-b-right {
+  float: right;
+}
+/**video**/
+.modal,video {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -55;
+  object-fit: fill;
+}
+.modal {
+  background: #3EC1A2;
+  filter: alpha(opacity=30);
+  opacity: 0.3;
+  z-index: -50;
+}
+/**main**/
+.main {
+  width: 728px;
+  height: 458px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -364px;
+  margin-top: -229px;
+  background-color: #fff;
+  z-index: 999;
+  border-radius: 4px;
+}
+.login-ad {
+  box-sizing: border-box;
+  float: left;
+  margin-left: 54px;
+  margin-top: 30px;
+  padding-right: 45px;
+  border-right: thin solid #DDD;
+  width: 310px;
+  text-align: center;
+}
+.login-title {
+  font-size: 20px;
+  line-height: 1.6em;
+  letter-spacing: 0.1em;
+}
+.login-subtitle {
+  position: relative;
+  width: 100%;
+  height: 1px;
+  background-color: #777;
+  margin-top: 12px;
+  margin-bottom: 30px;
+}
+.login-subtitle span {
+  color: #888;
+  font-size: 16px;
+  position: absolute;
+  left: 24%;
+  top: -11px;
+  background-color: #fff;
+  width: 148px;
+}
+.login-welcome {
+  color: #f05757;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  margin-bottom: 22px;
+}
+.login-promise {
+  color: #a5a5a5;
+  font-size: 14px;
+  margin-top: 18px;
+}
+.login-main {
+  float: right;
+  margin-left: 45px;
+  margin-right: 46px;
+  width: 268px;
+}
+.login-main-title {
+  margin-top: 30px;
+  margin-bottom: 26px;
+  color: #999;
+  font-size: 16px;
+}
+.login-main-title a {
+  color:  #ababab;
+}
+.login-main-title a.active {
+  color: #303030;
+}
+.login-form {
+  margin-bottom: 15px;
+}
+.login-form input {
+  box-sizing: border-box;
+  width: 268px;
+  height: 38px;
+  display: block;
+  border: 1px solid #dfdfdf;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 36px;
+  margin-bottom: 18px;
+  background: url(../images/nuandao.png) no-repeat -310px -390px;
+  outline: none;
+}
+.login-form input:focus {
+  border-color: #3ec0a3;
+}
+input.login-pwd {
+  background-position: -333px -434px;;
+}
+.login-msg {
+  height: 20px;
+}
+.login-msg>span{
+  float: left;
+  padding-left: 5px;
+}
+.login-msg>span.primary {
+  color: #666;
+}
+.login-msg>span.succ {
+  color: #3ec0a3;
+}
+.login-msg>span.err{
+  color: #DC5F5B;
+}
+
+.loss-pwd {
+  text-align: right;
+  background: url(../images/nuandao.png) no-repeat 250px -321px;
+  padding-right: 18px;
+  margin-bottom: 8px;
+}
+.loss-pwd>a {
+  color: #979797;
+  font-size: 12px;
+}
+.login-form>a{
+  display: block;
+  width: 100%;
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  padding-left: 0;
+  padding-right: 0;
+  letter-spacing: 0.1em;
+  background-color: #3ec0a3;
+  color: #fff;
+}
+.login-form>a:hover{
+  background-color: #48c9b0;
+}
+.other>h1{
+  color: #ababab;
+  font-size: 12px;
+  margin-bottom: 10px;
+  font-weight: normal;
+}
+.weibo-login {
+  display: block;
+  line-height: 40px;
+  text-align: center;
+  color: #d23838;
+  font-size: 18px;
+  border: 1px solid red;
+  padding-left: 28px;
+  background: #fff url(../images/sns-bind.png) no-repeat 42px -422px;
+  margin-bottom: 6px;
+}
+.other>p {
+  text-align: right;
+  margin-bottom: 20px;
+}
+.other>p>a {
+  color: #ababab;
+  font-size: 12px;
+}
+.login-declare ,.login-declare>a {
+  color: #ababab;
+  font-size: 12px;
+}
+.login-declare>a {
+  text-decoration: underline;
+}
+.down-app {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 50px;
+  height: 50px;
+  background: url(../images/shao2-hide.png) no-repeat right bottom;
+  text-indent: -999em;
+}
